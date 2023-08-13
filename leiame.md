@@ -36,12 +36,32 @@ Instalar o cli vue
 
 <style scoped></style>
 
+- Reatividade
 
-- Utilizando interpolação
+- One way interpolação
    {{}}
 
+- One way DataBind
+   :value -> para o template
 
+   <input type="text" :value="nomeCliente">
+   <input type="text" v-model="endereco">
 
+- to-way DataBind
    
+- Trabalando com props 
+      voce pode armazenar dados diferentes na props
+      props: {
+            prop_nome: String,
+            cliente : Object
+      }
+
+      você pode criar um props no App e usar no Componente cliente
+
+- Directivas condicionais
+    v-if v-else
+    v-show
+
+
 
 

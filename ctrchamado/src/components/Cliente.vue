@@ -1,8 +1,14 @@
 <template>
     <div class="container">
+        <h1></h1>
+
+
         <h1>Cadastro de Clientes</h1>
-        Nome do Cliente: {{ nome }} <br>
-        Endereço: {{ endereco }} <br>
+        Nome do Cliente: {{ nomeCliente }} <br>
+        Endereço: {{ endereco }} <br><br>
+        <input type="text" :value="nomeCliente"><br><br>        
+        <input type="text" v-model="endereco"><br>
+        <input type="text" v-model="nomeSistema"><br>
         <input type="button" value="Enviar">
     </div>
 </template>
@@ -12,9 +18,12 @@
         data() {
             return {
                 codigo: 0,
-                nome: 'jose',
+                nomeCliente: 'jose',
                 endereco: 'rua'
             }
+        },
+        props: {
+            prop_nome: String
         }
 
     }

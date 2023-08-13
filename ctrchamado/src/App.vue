@@ -9,6 +9,12 @@ import Cliente from './components/Cliente';
 
 export default {
   name: 'App',
+
+  data() {
+    return {
+      nomeSistema : "Sistema de Gestão"
+    }
+  },
   components: {
     Cliente
   }
